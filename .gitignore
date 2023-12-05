@@ -6,8 +6,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+ci_cd/
 .Python
-ci_cd/  # Exclude the virtual environment directory
 build/
 develop-eggs/
 dist/
