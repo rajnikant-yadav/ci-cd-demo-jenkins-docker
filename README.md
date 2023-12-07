@@ -91,4 +91,8 @@ Remove local Docker images and containers:
 ```bash
 docker rmi ci_cd_demo_jenkins_docker
 docker rm <container_id>
+
 ```
+
+## Pull the Jenkins image from Docker Hub
+docker pull jenkins/jenkins
