@@ -94,5 +94,60 @@ docker rm <container_id>
 
 ```
 
-## Pull the Jenkins image from Docker Hub
+## Setting Up Jenkins with Docker
+
+## Pull the Jenkins Image from Docker Hub
+
+```bash
 docker pull jenkins/jenkins
+docker run -p 8080:8080 -d 441f36761835
+docker logs -f 441f36761835
+
+Copy the generated password from the logs.
+
+Access Jenkins Web Interface
+Visit http://35.154.152.42:8080/ in your web browser.
+
+Paste the copied password to unlock Jenkins.
+Continue with the basic Jenkins setup, creating a user and configuring the instance.
+Jenkins is now ready!
+```
+
+## Configure Jenkins with GitHub
+Follow these steps to configure Jenkins to work with GitHub:
+
+### Go to Jenkins Configuration:
+
+1. Open Jenkins in your web browser.
+
+2. Navigate to "Manage Jenkins" > "Configure System."
+
+## Add GitHub Server:
+
+3. Scroll down to the "GitHub" section.
+
+4. Click on "Add GitHub Server."
+
+5. Enter the following details:
+   - **Name:** (Provide a name for the GitHub server configuration.)
+   - **API Token:** (Enter the GitHub API token. This is typically a personal access token generated from your GitHub account.)
+
+6. Click "Add" and then "Save."
+
+Now, Jenkins is configured to work seamlessly with GitHub. This integration allows Jenkins to interact with your GitHub repositories, triggering builds and providing continuous integration and continuous delivery (CI/CD) capabilities.
+
+**Note:** Ensure you replace the placeholder token (`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`) with the actual GitHub API token that you've generated from your GitHub account.
+
+Feel free to explore additional Jenkins and GitHub integration features based on your project requirements.
+
+---
+
+### Additional Notes:
+
+- Always keep your GitHub API token secure and avoid sharing it in public repositories or insecure locations.
+
+- Jenkins provides various plugins for GitHub integration, offering features like webhooks, pull request building, and more. Explore the Jenkins plugin ecosystem for additional functionalities.
+
+- Refer to the Jenkins and GitHub documentation for more detailed configurations and best practices.
+
+Happy coding with Jenkins and GitHub!
