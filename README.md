@@ -150,4 +150,3 @@ Feel free to explore additional Jenkins and GitHub integration features based on
 
 - Refer to the Jenkins and GitHub documentation for more detailed configurations and best practices.
 
-Happy coding with Jenkins and GitHub!
